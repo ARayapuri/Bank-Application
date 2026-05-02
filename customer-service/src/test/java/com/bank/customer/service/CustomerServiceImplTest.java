@@ -36,8 +36,8 @@ class CustomerServiceImplTest {
                 new CustomerCreateRequest(
                         "Ashok",
                         "9876543210",
-                        "ABCDE1234F",
                         "a@gmail.com",
+                        "ABCDE1234F",
                         "Hyd");
 
         when(repository.existsByMobile("9876543210"))
