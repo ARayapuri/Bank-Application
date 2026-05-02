@@ -21,5 +21,15 @@ jobs:
           java-version: 17
           cache: maven
 
-      - name: Build with Maven
-        run: mvn clean install
+     # - name: Build with Maven
+     #   run: mvn clean install
+
+      - name: Compile
+        run: mvn clean compile
+
+      - name: Run Tests
+        run: mvn test
+
+      - name: Package JAR
+        run: mvn package -DskipTests
+
