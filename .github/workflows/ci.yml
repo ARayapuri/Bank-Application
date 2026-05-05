@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Application (Smoke Test)
         run: |
-          java -jar customer-service/target/*.jar &
+          SPRING_PROFILES_ACTIVE=ci java -jar customer-service/target/*.jar &
           sleep 10
 
       - name: Upload JAR Artifacts
